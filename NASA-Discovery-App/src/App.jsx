@@ -38,13 +38,20 @@ function App() {
     const photo = data[0];
     
     const year = photo.date.slice(0, 4);
-
     const month =
       monthNames[
         Number(photo.date.slice(5, 7)) - 1
       ];
-
     const author = photo.copyright;
+
+    if (
+      banList.includes(year) ||
+      banList.includes(month) ||
+      (author && banList.includes(author))
+    ) {
+      console.log("Banned discovery found. Fetching another...");
+      return getPhoto();
+    }
 
     console.log("DATA:", data);
 
