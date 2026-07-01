@@ -2,9 +2,9 @@
 
 Submitted by: **Carolina Aldana**
 
-This web app: **A React web app that displays random NASA Mars rover photos and lets users filter future discoveries through a ban list.**
+This web app: **A React web app that fetches random discoveries from NASA's Astronomy Picture of the Day (APOD) API and allows users to customize future discoveries using an interactive ban list.**
 
-Time spent: **6** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
@@ -32,7 +32,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [x] Multiple types of attributes are clickable and can be added to the ban list
-- [x] Users can see a stored history of their previously displayed  results from this session
+- [x] Users can see a stored history of their previously displayed results from this session
   - A dedicated section of the application displays all the previous images/attributes seen before
   - Each time the API call button is clicked, the history updates with the newest API result
 
@@ -42,16 +42,11 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+
+Video created with Microsoft Clipchamp.
 
 ## Notes
 
