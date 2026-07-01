@@ -50,7 +50,7 @@ Video created with Microsoft Clipchamp.
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+**Describe any challenges encountered while building the app.**
 
 Figuring out which attributes to display was challenging because the API returns an image, the media type, the date, the author (sometimes), the title, and the description. Some of these are not attributes a user can use to filter with. For example, the media type is always an image, and the description is always different. I decided to use the date and divide it so that the year and month are displayed separately as attributes. Although it was not always available, I also decided to use the author as an attribute to meet the requirement of having at least three attributes.
 
