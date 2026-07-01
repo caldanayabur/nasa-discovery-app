@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/80fac515-bde0-4554-95c6-560ab496b58f
+
 # Web Development Project 4 - *NASA Discovery App*
 
 Submitted by: **Carolina Aldana**
@@ -44,7 +48,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough:
 
-
+https://github.com/user-attachments/assets/59b8996f-48fa-432b-943a-485b3ea27160
 
 Video created with Microsoft Clipchamp.
 
