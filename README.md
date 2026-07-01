@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/80fac515-bde0-4554-95c6-560ab496b58f
-
 # Web Development Project 4 - *NASA Discovery App*
 
 Submitted by: **Carolina Aldana**
