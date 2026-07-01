@@ -56,6 +56,8 @@ function App() {
     console.log("DATA:", data);
 
     setCurrentPhoto(photo);
+
+    setHistory([...history, photo]);
   };
 
   console.log("CURRENT PHOTO:", currentPhoto);
@@ -76,23 +78,28 @@ function App() {
   ];
 
   return (
-    <div>
-      <h1>NASA Explorer 🚀</h1>
+    <div className="app">
+      <h1>NASA Explorer</h1>
 
-      <button onClick={getPhoto}>
-        Discover
-      </button>
+      <div className="content">
 
+        <div className="ban-section">
       <h2>Ban List</h2>
 
       {banList.map((attribute) => (
         <p
           key={attribute}
+          className="ban-chip"
           onClick={() => removeBan(attribute)}
         >
           {attribute}
         </p>
       ))}
+      </div>
+      
+      <div className="photo-section">
+
+      <button onClick={getPhoto}>Explore the Cosmos</button>
 
       {currentPhoto && (
         <div>
@@ -105,13 +112,15 @@ function App() {
           />
 
           <p
+            className="meta-badge"
             onClick={() => addBan(currentPhoto.date.slice(0, 4))}
           >
             Year: {currentPhoto.date.slice(0, 4)}
           </p>
 
           <p
-            onClick={() => 
+            className="meta-badge"
+            onClick={() =>
               addBan(
                 monthNames[
                   Number(currentPhoto.date.slice(5, 7)) - 1
@@ -125,21 +134,39 @@ function App() {
               ]
             }
           </p>
-          
+
           {currentPhoto.copyright && (
             <p
-            onClick={() => addBan(currentPhoto.copyright)}
+              className="meta-badge"
+              onClick={() => addBan(currentPhoto.copyright)}
             >
               Author: {currentPhoto.copyright}
             </p>
           )}
 
-          <p>
-            Explanation: {currentPhoto.explanation}
+          <p className="explanation">
+            {currentPhoto.explanation}
           </p>
 
         </div>
       )}
+      </div>
+
+      <div className="history-section">
+      <h2>Discovery History</h2>
+
+      {history.map((photo, index) => (
+        <div key={index} className="history-item">
+          <img
+            src={photo.url}
+            alt={photo.title}
+          />
+          <p>{photo.title}</p>
+        </div>
+      ))}
+      </div>
+
+      </div>
     </div>
   );
 }
